@@ -10,24 +10,24 @@
 #include <ctype.h>
 #include <fstream>
 using namespace std;
-// реализовать класс Точка. Нужно сохранять координаты x, y, z в переменных класса. Реализовать функции класса для ввода данных, вывода данных, реализовать аксесоры для доступа к переменным, реалиховать сохранение в файл и загрузку данных с файла
+
 class Point
 {
 private:
 	double x, y, z;
 public:
-	Point(); // конструктор по умолчанию
-	Point(double x, double y, double z); // конструктор с параметрами
-	Point(const Point& point); // конструктор копирования
-	~Point(); // деструктор
-	void setX(double x); // аксесоры
+	Point(); // ГЄГ®Г­Г±ГІГ°ГіГЄГІГ®Г° ГЇГ® ГіГ¬Г®Г«Г·Г Г­ГЁГѕ
+	Point(double x, double y, double z); // ГЄГ®Г­Г±ГІГ°ГіГЄГІГ®Г° Г± ГЇГ Г°Г Г¬ГҐГІГ°Г Г¬ГЁ
+	Point(const Point& point); // ГЄГ®Г­Г±ГІГ°ГіГЄГІГ®Г° ГЄГ®ГЇГЁГ°Г®ГўГ Г­ГЁГї
+	~Point(); // Г¤ГҐГ±ГІГ°ГіГЄГІГ®Г°
+	void setX(double x); // Г ГЄГ±ГҐГ±Г®Г°Г»
 	void setY(double y); 
 	void setZ(double z);
-	double getX() const; // const - чтобы нельзя было изменять данные
+	double getX() const; // const - Г·ГІГ®ГЎГ» Г­ГҐГ«ГјГ§Гї ГЎГ»Г«Г® ГЁГ§Г¬ГҐГ­ГїГІГј Г¤Г Г­Г­Г»ГҐ
 	double getY() const;
 	double getZ() const;
-	void print() const; // вывод данных
-	void input(); // ввод данных с клавиатуры
-	void saveToFile(const char* fileName) const; // сохранение в файл
-	void loadFromFile(const char* fileName); // загрузка из файла
+	void print() const; // ГўГ»ГўГ®Г¤ Г¤Г Г­Г­Г»Гµ
+	void input(); // ГўГўГ®Г¤ Г¤Г Г­Г­Г»Гµ Г± ГЄГ«Г ГўГЁГ ГІГіГ°Г»
+	void saveToFile(const char* fileName) const; // Г±Г®ГµГ°Г Г­ГҐГ­ГЁГҐ Гў ГґГ Г©Г«
+	void loadFromFile(const char* fileName); // Г§Г ГЈГ°ГіГ§ГЄГ  ГЁГ§ ГґГ Г©Г«Г 
 };
